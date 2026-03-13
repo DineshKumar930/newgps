@@ -668,3 +668,73 @@ body {
     padding: 40px 60px;
   }
 }
+
+/* Footer.css - with Logo Support */
+
+/* --- Logo Brand Block --- */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.footer-logo-wrapper {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  
+  
+ 
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-logo-wrapper:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ 
+  /* White-tint filter so logo pops on dark footer backgrounds */
+  filter: brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+}
+
+.footer-brand h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /* inherit color from .footer h3 */
+}
+
+
+
+
+
+/* Responsive logo adjustments */
+@media (max-width: 768px) {
+  .footer-logo-wrapper {
+    width: 52px;
+    height: 52px;
+  }
+
+  .footer-brand h3 {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-brand {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

@@ -164,3 +164,22 @@
     justify-content: center;
   }
 }
+
+
+.developer{
+  margin-top:8px;
+  font-size:14px;
+  color:#ccc;
+}
+
+.dev-name{
+  color:#00d4ff;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+.dev-name:hover{
+  color:#00ff9d;
+  text-shadow:0 0 8px rgba(0,255,157,0.7);
+}

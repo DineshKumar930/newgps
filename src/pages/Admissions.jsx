@@ -7,7 +7,7 @@ const Admission = () => {
 
       {/* HERO */}
       <section className="admission-hero">
-        <h1 className="moving-text">Admission Open 2026-27</h1>
+        <h1 className="moving-text">Admission Open 2026</h1>
         <p>Admissions Open: Government and Private seats are available.
 Eligible students are invited to apply and secure their seats.</p>
       </section>

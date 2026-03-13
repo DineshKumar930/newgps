@@ -12,26 +12,35 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebook />, url: 'https://facebook.com' },
-    { icon: <FaTwitter />, url: 'https://twitter.com' },
-    { icon: <FaLinkedin />, url: 'https://linkedin.com' },
-    { icon: <FaInstagram />, url: 'https://instagram.com' }
+    { icon: <FaFacebook />, url: 'https://facebook.com', label: 'Facebook' },
+    { icon: <FaTwitter />, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: <FaLinkedin />, url: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: <FaInstagram />, url: 'https://instagram.com', label: 'Instagram' }
   ];
 
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-grid">
-          {/* College Info */}
+          {/* College Info with Logo */}
           <div className="footer-section">
-            <h3>Government Polytechnic Sahjanwa </h3>
+            <div className="footer-brand">
+              <div className="footer-logo-wrapper">
+                <img
+                  src="/images/college-logo.png"
+                  alt="Government Polytechnic Sahjanwa Logo"
+                  className="footer-logo"
+                />
+              </div>
+              <h3>Government Polytechnic Sahjanwa</h3>
+            </div>
             <p className="footer-description">
               Committed to excellence in education, research, and innovation since 1990.
             </p>
             <div className="contact-info">
               <div className="contact-item">
                 <FaMapMarkerAlt />
-                <span> Hardi,Hasanpur, Magahar, Tahsil-Sahjanwa, Gorakhpur -273209, Uttar Pradesh</span>
+                <span>Hardi, Hasanpur, Magahar, Tahsil-Sahjanwa, Gorakhpur – 273209, Uttar Pradesh</span>
               </div>
               <div className="contact-item">
                 <FaPhone />
@@ -62,8 +71,17 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/">Student Corner</Link></li>
               <li><Link to="/events">Campus Life</Link></li>
-              <li><Link to="/faculty">Faculty Directory</Link></li>
+              <li>
+                <a href="/pdf/fff.pdf" target="_blank" rel="noopener noreferrer">
+                  Faculty Info
+                </a>
+              </li>
               <li><Link to="/courses">Course Catalog</Link></li>
+              <li>
+                <a href="/pdf/fff.pdf" target="_blank" rel="noopener noreferrer">
+                  Mandatory Disclosure
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -72,13 +90,13 @@ const Footer = () => {
             <h4>Connect With Us</h4>
             <div className="social-links">
               {socialLinks.map((social, index) => (
-                <a 
-                  key={index} 
-                  href={social.url} 
-                  target="_blank" 
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon"
-                  aria-label={`Visit our ${social.icon.type.name} page`}
+                  aria-label={`Visit our ${social.label} page`}
                 >
                   {social.icon}
                 </a>
@@ -86,21 +104,27 @@ const Footer = () => {
             </div>
             <div className="newsletter">
               <p>Subscribe to our newsletter</p>
-              <form className="newsletter-form">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
+              <div className="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
                   className="newsletter-input"
                 />
-                <button type="submit" className="btn">Subscribe</button>
-              </form>
+                <button type="button" className="btn">Subscribe</button>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="copyright">
-          <p>&copy; {new Date().getFullYear()} Government Polytechnic Sahjanwa Gorakhpur. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Government Polytechnic Sahjanwa Gorakhpur.
+            All rights reserved.
+          </p>
+          <p className="developer">
+            Developed by <span className="dev-name">Dinesh Roy</span>
+          </p>
           <div className="legal-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>

@@ -59,7 +59,7 @@ const facultyData = [
   },
   {
     name: "Ms. Shashiprabha Ramji Sharma",
-    designation: "Associate Professor",
+    designation: "Lecturer (Applied Science)",
     image: "images/shashi.jpg",
     qualification: "MBA",
     experience: "6+ Years",
@@ -68,7 +68,44 @@ const facultyData = [
     phone: "+1 (555) 678-9012",
     department: "Mechanical Engineering",
     research: "Robotics & Automation"
+  },
+  {
+    name: "Mr. Narendra Singh",
+    designation: "Lecturer (Mechanical Engineering)",
+    image: "images/narendra.jpeg",
+    qualification: "B.Tech.",
+    experience: "3+ Years",
+    about: "Expert in robotics and automation systems. Former lead engineer at automotive company. Focuses on sustainable energy solutions and autonomous systems.",
+    email: "m.rodriguez@university.edu",
+    phone: "+91 *********",
+    department: "Mechanical Engineering",
+    research: "Robotics & Automation"
+  },
+  {
+    name: "Mr. Ankit Kumar Gupta",
+    designation: "Lecturer (Applied Science)",
+    image: "images/Ankit sir.jpg",
+    qualification: "M.Sc.",
+    experience: "3+ Years",
+    about: "Expert in robotics and automation systems. Former lead engineer at automotive company. Focuses on sustainable energy solutions and autonomous systems.",
+    email: "m.rodriguez@university.edu",
+    phone: "+91 *********",
+    department: "Mechanical Engineering",
+    research: "Robotics & Automation"
+  },
+  {
+    name: "Mr. Abhishek Singh",
+    designation: "Lecturer (Electrical Engineering)",
+    image: "images/abhishek.jpg",
+    qualification: "B.Tech.",
+    experience: "0+ Years",
+    about: "Expert in robotics and automation systems. Former lead engineer at automotive company. Focuses on sustainable energy solutions and autonomous systems.",
+    email: "m.rodriguez@university.edu",
+    phone: "+91 *********",
+    department: "Electrical Engineering",
+    research: "Robotics & Automation"
   }
+
 ];
 
 const Faculty = () => {
@@ -142,18 +179,18 @@ const Faculty = () => {
         </div>
         <div className="stat-divider"></div>
         <div className="stat-item-premium-bar">
-          <span className="stat-number">6+</span>
+          <span className="stat-number">3+</span>
           <span className="stat-label">Departments</span>
         </div>
         <div className="stat-divider"></div>
         <div className="stat-item-premium-bar">
           <span className="stat-number">100%</span>
-          <span className="stat-label">PhD Qualified</span>
+          <span className="stat-label">Well Qualified</span>
         </div>
         <div className="stat-divider"></div>
         <div className="stat-item-premium-bar">
-          <span className="stat-number">75+</span>
-          <span className="stat-label">Research Papers</span>
+          <span className="stat-number">120+</span>
+          <span className="stat-label">Students</span>
         </div>
       </div>
 
