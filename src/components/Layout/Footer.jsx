@@ -118,6 +118,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="copyright">
+<<<<<<< HEAD
           <p>
             &copy; {new Date().getFullYear()} Government Polytechnic Sahjanwa Gorakhpur.
             All rights reserved.
@@ -125,6 +126,9 @@ const Footer = () => {
           <p className="developer">
             Developed by <span className="dev-name">Dinesh Roy</span>
           </p>
+=======
+          <p>&copy; {new Date().getFullYear()} Government Polytechnic Sahjanwa Gorakhpur. All rights reserved. Develop & Design by: <strong>Dinesh Roy & Prince Roy</strong></p>
+>>>>>>> 43f379bbec73570b957077f2cf649842f9400226
           <div className="legal-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
