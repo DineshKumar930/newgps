@@ -123,8 +123,16 @@ const Footer = () => {
             All rights reserved.
           </p>
           <p className="developer">
-            Developed & Designed by <span className="dev-name">Dinesh Roy & Prince Roy</span>
-          </p>
+  Developed & Designed by{" "}
+  <a 
+    href="https://dkwebsoft.dineshroy.online" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="dev-name"
+  >
+    DKWebSoft
+  </a>
+</p>
           <div className="legal-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
