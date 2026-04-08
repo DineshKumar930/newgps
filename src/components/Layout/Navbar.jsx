@@ -157,7 +157,7 @@ const Navbar = () => {
             {/* Right Logo - Visible on mobile */}
             <div className="logo-container right">
               <img
-                src="/images/college-logo.png"
+                src="/images/csc.png"
                 alt="CSC Academy Logo"
                 className="college-logo csc-logo"
                 loading="lazy" title="Government Polytechnic Sahjanwa Gorakhpur"
@@ -175,7 +175,7 @@ const Navbar = () => {
               {/* Logo for scrolled state */}
               <Link to="/" className={`scrolled-logo ${scrolled ? "visible" : ""}`}>
                 <img 
-                  src="/images/csc.png" 
+                  src="/images/college-logo.png" 
                   alt="Govt Polytechnic Sahjanwa" 
                   className="compact-logo"
                   loading="lazy"
