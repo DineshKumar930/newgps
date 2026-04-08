@@ -1,3 +1,21 @@
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+
+<body>
+
+
+</body>
+
+
+</html>.navbar {
+  position: relative;
+  padding-top: 58px; /* 🔥 menu-bar ki exact height */
+}
+
+
 /* Navbar.css - Professional Two-Row Layout with Sticky Menu Bar */
 
 :root {
@@ -31,6 +49,7 @@
   transition: var(--transition);
 }
 
+
 .header-section {
   height: auto;
 }
@@ -49,24 +68,21 @@
   width: 100%;
 }
 
-/* Logo wrapper for all screens - IMPROVED FOR BETTER VISIBILITY */
+/* Logo wrapper for all screens */
 .logo-wrapper {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 20px;
-  padding: 12px 0;
+  gap: 15px;
+  padding: 10px 0;
 }
 
-/* Logo containers - IMPROVED VISIBILITY */
+/* Logo containers */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: white;
-  border-radius: 12px;
-  padding: 4px;
 }
 
 .logo-container.left {
@@ -77,24 +93,22 @@
   justify-content: flex-end;
 }
 
-/* College logos - ENHANCED VISIBILITY */
+/* College logos */
 .college-logo {
   height: auto;
-  max-height: 75px;
+  max-height: 65px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
-  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .csc-logo {
-  max-height: 70px;
+  max-height: 60px;
 }
 
 .college-logo:hover {
   transform: scale(1.03);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 /* College info - center section */
@@ -168,7 +182,6 @@
   width: 100%;
   background: var(--primary-color);
   z-index: 2000;
-  transition: box-shadow 0.3s ease;
 }
 
 .menu-bar-inner {
@@ -179,6 +192,7 @@
 
 .menu-bar.scrolled .menu-bar-inner {
   padding: 4px 0;
+  
 }
 
 .menu-bar.scrolled {
@@ -195,7 +209,7 @@
   font-weight: 700;
   font-size: 1.1rem;
   padding: 5px 10px;
-  border-radius: 6px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.12);
   position: absolute;
   left: 20px;
@@ -215,7 +229,7 @@
 }
 
 .compact-logo {
-  height: 32px;
+  height: 30px;
   width: auto;
   filter: brightness(0) invert(1);
 }
@@ -264,7 +278,6 @@
   border: none;
   cursor: pointer;
   font-family: inherit;
-  border-radius: 6px;
 }
 
 .nav-link:hover, .dropdown-toggle:hover {
@@ -275,7 +288,7 @@
 .nav-link.active {
   color: white;
   background: var(--secondary-color);
-  box-shadow: 0 2px 6px rgba(230, 57, 70, 0.3);
+  box-shadow: 0 3px 8px rgba(230, 57, 70, 0.3);
 }
 
 .dropdown-toggle {
@@ -350,9 +363,9 @@
   background: rgba(255, 255, 255, 0.15);
   border: none;
   color: white;
-  width: 42px;
-  height: 42px;
-  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: var(--transition);
@@ -572,38 +585,22 @@
 
 /* ===== RESPONSIVE DESIGN ===== */
 
-/* Desktop (1025px and above) */
-@media (min-width: 1025px) {
-  .logo-wrapper {
-    gap: 25px;
-  }
-  
-  .college-logo {
-    max-height: 80px;
-  }
-  
-  .csc-logo {
-    max-height: 75px;
-  }
-}
-
 /* Tablet (768px - 1024px) */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) {
   .container {
     padding: 0 15px;
   }
   
   .logo-wrapper {
-    gap: 15px;
-    padding: 10px 0;
+    gap: 12px;
   }
   
   .college-logo {
-    max-height: 65px;
+    max-height: 100px;
   }
   
   .csc-logo {
-    max-height: 60px;
+    max-height: 70px;
   }
 
   .college-name {
@@ -651,36 +648,26 @@
     padding: 0;
   }
   
-  /* IMPROVED: Keep side logos clearly visible on mobile */
+  /* Keep side logos visible on mobile */
   .logo-wrapper {
     grid-template-columns: auto 1fr auto;
-    gap: 10px;
+    gap: 8px;
     padding: 8px 0;
     align-items: center;
   }
   
   .logo-container {
     display: flex;
-    min-width: 55px;
-    padding: 2px;
+    min-width: 50px;
   }
   
-  /* IMPROVED: Enhanced mobile logo visibility */
   .college-logo {
-    max-height: 50px;
+    max-height: 45px;
     width: auto;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   }
   
   .csc-logo {
     max-height: 55px;
-  }
-  
-  /* Add a subtle background to make logos stand out on mobile */
-  .logo-container.left .college-logo {
-    background: white;
-    border-radius: 8px;
-    padding: 2px;
   }
   
   .college-info {
@@ -726,7 +713,7 @@
   .menu-container {
     padding: 0;
     min-height: 44px;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Push toggle to right */
   }
   
   .menu-bar.scrolled .desktop-nav {
@@ -752,6 +739,7 @@
     padding-left: 0;
   }
   
+  /* Adjust desktop nav for scrolled state on mobile */
   .menu-bar.scrolled .desktop-nav {
     margin-left: 0;
   }
@@ -764,29 +752,20 @@
   }
   
   .logo-wrapper {
-    gap: 8px;
+    gap: 6px;
     padding: 6px 0;
   }
   
-  /* IMPROVED: Even better visibility on small screens */
   .college-logo {
-    max-height: 44px;
+    max-height: 40px;
   }
   
   .csc-logo {
-    max-height: 48px;
+    max-height: 50px;
   }
   
   .logo-container {
-    min-width: 48px;
-  }
-  
-  /* Add a subtle white background to make logo pop on small screens */
-  .logo-container.left .college-logo,
-  .logo-container.right .college-logo {
-    background: white;
-    border-radius: 6px;
-    padding: 2px;
+    min-width: 40px;
   }
   
   .college-name-mobile-line1 {
@@ -840,20 +819,16 @@
 
 /* Extra Small Mobile (max-width: 360px) */
 @media (max-width: 360px) {
-  .logo-wrapper {
-    gap: 6px;
-  }
-  
   .college-logo {
-    max-height: 38px;
+    max-height: 36px;
   }
   
   .csc-logo {
-    max-height: 42px;
+    max-height: 45px;
   }
   
   .logo-container {
-    min-width: 42px;
+    min-width: 35px;
   }
   
   .college-name-mobile-line1 {
