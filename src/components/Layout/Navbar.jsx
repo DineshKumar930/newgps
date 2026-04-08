@@ -119,7 +119,7 @@ const Navbar = () => {
             {/* Left Logo - Visible on mobile */}
             <div className="logo-container left">
               <img
-                src="/images/csc.png"
+                src="/images/college-logo.png"
                 alt="Govt Polytechnic Sahjanwa Logo"
                 className="college-logo"
                 loading="lazy" title="CSC Academy"
